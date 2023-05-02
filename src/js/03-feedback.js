@@ -10,7 +10,7 @@ const inputValues = {};
 form.addEventListener('input', throttle(inputMessage, 500));
 
 function inputMessage(event) {
-  event.preventDefault(ç);
+  event.preventDefault();
   inputValues[event.target.name] = event.target.value;
   localStorage.setItem('feedback-form-state', JSON.stringify(inputValues));
 }
